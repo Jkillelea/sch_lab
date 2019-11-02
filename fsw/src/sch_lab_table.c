@@ -45,6 +45,8 @@ SCH_LAB_ScheduleTable_t  SCH_TBL_Structure =
         CI_LAB_SEND_HK_MID,
         TO_LAB_SEND_HK_MID,
         SAMPLE_APP_SEND_HK_MID,
+        SC_1HZ_WAKEUP_MID,
+        GPS_KALMAN_WAKEUP_MID,
 
         SCH_LAB_END_OF_TABLE          
     },
@@ -57,6 +59,8 @@ SCH_LAB_ScheduleTable_t  SCH_TBL_Structure =
         4,  /*CI_LAB*/
         4,  /*TO_LAB*/
         4,  /*SAMPLE_LAB*/
+        1,  /*SC 1H*/
+        1,  /*GPS_KALMAN*/
         
         0   /*END OF TABLE*/
     },
@@ -69,6 +73,8 @@ SCH_LAB_ScheduleTable_t  SCH_TBL_Structure =
         0,  /*CI_LAB*/
         0,  /*TO_LAB*/
         0,  /*SAMPLE_LAB*/
+        0,  /*SC 1H*/
+        0,  /*GPS_KALMAN*/
         
         0   /*END OF TABLE*/
     } 

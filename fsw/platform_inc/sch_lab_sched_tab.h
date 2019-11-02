@@ -40,7 +40,6 @@
 #include "to_lab_msgids.h"
 
 #include "sample_app_msgids.h"
-
 #include "sc_msgids.h"
 #include "gps_kalman_msgids.h"
 
@@ -72,32 +71,6 @@ typedef struct
 /*
 ** Local Function Prototypes
 */
-SCH_LAB_ScheduleTable_t SCH_LAB_ScheduleTable[SCH_LAB_MAX_SCHEDULE_ENTRIES] = 
-{ 
-     { CFE_ES_SEND_HK_MID,   4, 0 },  /* Housekeeping requests go out every 4 seconds */
-     { CFE_EVS_SEND_HK_MID,  4, 0 },
-     { CFE_TIME_SEND_HK_MID, 4, 0 },
-     { CFE_SB_SEND_HK_MID,   4, 0 },
-     { CFE_TBL_SEND_HK_MID,  4, 0 },
-     
-     { CI_LAB_SEND_HK_MID,   4, 0 },
-     { TO_LAB_SEND_HK_MID,   4, 0 },
-     { SAMPLE_APP_SEND_HK_MID, 4, 0 },
-     { SC_1HZ_WAKEUP_MID,    1, 0 },  /* Example of a 1hz packet */
-     { GPS_KALMAN_WAKEUP_MID,1, 0 },
-
-
-#if 0
-     { SC_SEND_HK_MID,       4, 0 },
-     { HS_SEND_HK_MID,       4, 0 },
-     { FM_SEND_HK_MID,       4, 0 },
-     { DS_SEND_HK_MID,       4, 0 },
-     { LC_SEND_HK_MID,       4, 0 },
-
-#endif
-
-     { SCH_LAB_END_OF_TABLE, 0, 0 }
-};
 
 int32 SCH_LAB_TblValidation(void *MySchTBL);
 int32 SCH_LAB_AppInit(void);
