@@ -1,6 +1,6 @@
 /************************************************************************
 **
-**      GSC-18128-1, "Core Flight Executive Version 6.6"
+**      GSC-18128-1, "Core Flight Executive Version 6.7"
 **
 **      Copyright (c) 2006-2019 United States Government as represented by
 **      the Administrator of the National Aeronautics and Space Administration.
@@ -32,7 +32,7 @@
 
 #define SCH_LAB_MAJOR_VERSION    2
 #define SCH_LAB_MINOR_VERSION    3
-#define SCH_LAB_REVISION         2
+#define SCH_LAB_REVISION         3
 #define SCH_LAB_MISSION_REV      0
 
 
