@@ -10,7 +10,13 @@ To change the list of packets that sch_lab sends out, edit the schedule table lo
 fsw/platform_inc/sch_lab_sched_tab.h
 
 ## Version Notes
-
+- 2.3.5: DEVELOPMENT
+  - Improved table handling
+  - sch_lab now builds on Raspbian OS  
+  - Minor updates (see https://github.com/nasa/sch_lab/pull/36)
+- 2.3.4: DEVELOPMENT
+  - Fix for clean build with OMIT_DEPRECATED
+  - Minor updates (see https://github.com/nasa/sch_lab/pull/35)
 - 2.3.3: DEVELOPMENT
   - Minor updates (see https://github.com/nasa/sch_lab/pull/28)
 - 2.3.2: DEVELOPMENT
@@ -32,5 +38,4 @@ As a lab application, extensive testing is not performed prior to release and on
 
 For best results, submit issues:questions or issues:help wanted requests at https://github.com/nasa/cFS.
 
-Official cFS page: http://cfs.gsfc.nasa.gov
-
+Official cFS page: http://cfs.gsfc.nasa.gov  
