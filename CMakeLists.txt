@@ -10,6 +10,6 @@ include_directories(${sc_MISSION_DIR}/fsw/platform_inc)
 include_directories(${gps_kalman_MISSION_DIR}/fsw/platform_inc)
 
 # Create the app module
-add_cfe_app(sch_lab ${APP_SRC_FILES})
+# add_cfe_app(sch_lab ${APP_SRC_FILES})
 add_cfe_app(sch_lab fsw/src/sch_lab_app.c)
 add_cfe_tables(sch_lab_table fsw/src/sch_lab_table.c)
