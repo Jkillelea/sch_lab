@@ -29,6 +29,7 @@
 */
 #include "ci_lab_msgids.h"
 #include "to_lab_msgids.h"
+#include "gps_reader_msgids.h"
 
 #include "sample_app_msgids.h"
 
@@ -58,6 +59,7 @@ SCH_LAB_ScheduleTable_t SCH_TBL_Structure = {.Config = {
                                                  {CFE_SB_MSGID_WRAP_VALUE(CI_LAB_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(TO_LAB_SEND_HK_MID), 4},
                                                  {CFE_SB_MSGID_WRAP_VALUE(SAMPLE_APP_SEND_HK_MID), 4},
+                                                 {CFE_SB_MSGID_WRAP_VALUE(GPS_READER_WAKEUP_MID), 1},
 #if 0
                 {CFE_SB_MSGID_WRAP_VALUE(SC_SEND_HK_MID),       4},
                 {CFE_SB_MSGID_WRAP_VALUE(SC_1HZ_WAKEUP_MID),    1},  /* Example of a 1hz packet */
