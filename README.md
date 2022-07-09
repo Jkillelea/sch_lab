@@ -7,12 +7,53 @@ This repository contains NASA's Scheduler Lab (sch_lab), which is a framework co
 
 This lab application is a non-flight packet scheduler application for the cFS Bundle. It is intended to be located in the `apps/sch_lab` subdirectory of a cFS Mission Tree. The Core Flight System is bundled at <https://github.com/nasa/cFS> (which includes sch_lab as a submodule), which includes build and execution instructions.
 
-sch_lab is a simple packet scheduler application with a one second resoluton.
+sch_lab is a simple packet scheduler application with a one second resolution.
 
 To change the list of packets that sch_lab sends out, edit the schedule table located in the platform include file: fsw/platform_inc/sch_lab_sched_tab.h
 
 ## Version History
 
+### Development Build: v2.5.0-rc4+dev31
+- Update cmake mimimum required to something more recent
+- See <https://github.com/nasa/sch_lab/pull/118>
+
+### Development Build: v2.5.0-rc4+dev29
+
+- Resolve uninit var static analysis warnings
+- See <https://github.com/nasa/sch_lab/pull/116> and <https://github.com/nasa/cFS/pull/492>
+
+### Development Build: v2.5.0-rc4+dev23
+
+- Update Copyright Headers
+- Standardize version.h 
+- See <https://github.com/nasa/sch_lab/pull/> and <https://github.com/nasa/cFS/445>
+
+### Development Build: v2.5.0-rc4+dev16
+
+- Apply header guard standard
+- See <https://github.com/nasa/cFS/pull/432>
+
+### Development Build: v2.5.0-rc4+dev13
+
+- Add option to configure base tick rate
+- Reuse CodeQL, Static Analyis, and Format Check
+- See <https://github.com/nasa/sch_lab/pull/105> and <https://github.com/nasa/cFS/pull/410>
+
+### Development Build: v2.5.0-rc4+dev6
+
+- Use separate address variable
+- Use CFE_MSG_PTR conversion macro
+- Update baseline for cFS-Caelum-rc4: v2.5.0-rc4
+- See <https://github.com/nasa/sch_lab/pull/102> and <https://github.com/nasa/cFS/pull/390>
+
+### Development Build: v2.4.0-rc1+dev53
+
+- Apply CFE_SB_ValueToMsgId where required
+- See <https://github.com/nasa/sch_lab/pull/92> and <https://github.com/nasa/cFS/pull/359>
+### Development Build: v2.4.0-rc1+dev47
+
+- Allow command codes to be specified in sch_lab_table #85, add CmdCode to sch_lab_table
+- See <https://github.com/nasa/sch_lab/pull/87> and <https://github.com/nasa/cFS/pull/351>
 ### Development Build: v2.4.0-rc1+dev40
 
 -  Implement Coding Standard in CodeQL workflow
